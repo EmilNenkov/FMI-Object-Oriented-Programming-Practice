@@ -16,12 +16,12 @@ void printQuestions(Test &test){
     char answer;
     for (int i = 0; i < 1; i++) {
         Problem problem = test.problems[i];
-        std::cout << i + 1 << ".  " << problem.question "( " << problem.points << " Points)" << "\n\n";
+        std::cout << i + 1 << ".  " << problem.question << "( " << problem.points << " Points)" << "\n\n";
         for (int j = 0; j < 4; j++) {
             char letter = j + 65;
             std::cout << letter << ": " << problem.answers[j] << "  ";
         }
-        std::cout <<  << "\n\n" << "Enter an answer (A, B, C or D): ";
+        std::cout << "\n\n" << "Enter an answer (A, B, C or D): ";
         std::cin >> answer;
         if (answer == problem.correct_answer) {
             test.total_points += problem.points;
