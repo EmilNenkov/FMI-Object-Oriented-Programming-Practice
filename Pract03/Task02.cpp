@@ -33,6 +33,7 @@ void inputArr(int*& arr, unsigned int &n) {
     for (int i = 0; i < n; i++) {
         ifNums >> arr[i];
     }
+    ifNums.close();
 }
 
 int main()
